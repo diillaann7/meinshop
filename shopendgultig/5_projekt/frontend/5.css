@@ -1,0 +1,205 @@
+/* Grundlegendes Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f0f8ff;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+}
+
+header h1 {
+    font-style: italic;
+    font-size: 28px;
+    color: #333;
+}
+
+#links a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+#links a:hover {
+    color: #1e90ff;
+}
+
+/* Balken / Banner */
+#balken {
+    width: 90%;
+    max-width: 1000px;
+    height: 300px;
+    margin: 120px auto 40px auto;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+#balken img {
+    width: 350px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.banner-text h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.banner-text p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Featured Products */
+#text {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#produkte {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto 40px auto;
+}
+
+.product {
+    background-color: #ffffff;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    max-height: 150px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.product-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.product-price {
+    font-weight: bold;
+    color: #1e90ff;
+    margin-bottom: 10px;
+}
+
+.product button {
+    padding: 8px 15px;
+    border: none;
+    background-color: #1e90ff;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.product button:hover {
+    background-color: #0f75d1;
+}
+
+/* View all Button */
+#butt1 {
+    display: block;
+    margin: 0 auto 60px auto;
+    padding: 12px 30px;
+    font-weight: bold;
+    border: none;
+    background-color: #1e90ff;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#butt1:hover {
+    background-color: #0f75d1;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #ffffff;
+    border-top: 1px solid #ddd;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.05);
+}
+
+#informationen a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+#informationen a:hover {
+    color: #1e90ff;
+}
+
+footer p {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #777;
+}
+
+
+#waren {
+    display: none;
+    width: 400px;
+    max-height: 500px;
+    overflow-y: auto;   /* scrollbar, falls zu viele Produkte */
+    position: fixed;
+    top: 15%;
+    right: 5%;          /* rechts andocken, wirkt wie "Einkaufswagen" */
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    border: 1px solid #ddd;
+    padding: 15px;
+}
+

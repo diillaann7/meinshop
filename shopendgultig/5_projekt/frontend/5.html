@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mein Shopp</title>
+    <link rel="stylesheet" href="5.css">
+</head>
+
+<body>
+    <header>
+        <h1>Mein Shopp</h1>
+        <nav id="links">
+            <a href="/5_projekt/frontend/5.html">Home</a>
+            <a href="#" onclick="warenkorbanzeigen()">Basket</a>
+
+            <a href="">Cart</a>
+            <a href="/login_seite/login.html">Login</a>
+        </nav>
+    </header>
+
+    <div id="waren">
+
+    </div>
+
+    <main>
+        <section id="balken">
+            <div class="banner-text">
+                <h2>Best Deals on <br> Electronics</h2>
+                <p>Discover amazing offers on top-quality gadgets!</p>
+            </div>
+            <img id="bild1" src="/frontend/bilder/laptop-vektor-mockup-647546_982290-58.avif" alt="Laptop">
+        </section>
+
+        <h3 id="text">Featured Products</h3>
+        <section id="produkte">
+            <div class="product">
+                <img src="/frontend/bilder/laptop-karikatur_78370-508.avif" alt="Laptop">
+                <p class="product-name">Laptop</p>
+                <p class="product-price">999$</p>
+                <button onclick="produktkaufen('laptop')">Buy</button>
+            </div>
+            <div class="product">
+                <img src="/frontend/bilder/csm_apps_63be5e03d1.webp" alt="Smartphone">
+                <p class="product-name">Smartphone</p>
+                <p class="product-price">699$</p>
+                <button onclick="produktkaufen('handy')">Buy</button>
+            </div>
+            <div class="product">
+                <img src="/frontend/bilder/headphones-sony-topbanner-gb-070623.avif" alt="Headphones">
+                <p class="product-name">Headphones</p>
+                <p class="product-price">199$</p>
+                <button onclick="produktkaufen('headphone')">Buy</button>
+            </div>
+            <div class="product">
+                <img src="/frontend/bilder/eos-r8-frt_gallery-module_05_365x228_aa065f319187416e9ccdd3d67a9ba48b.jfif" alt="Camera">
+                <p class="product-name">Camera</p>
+                <p class="product-price">499$</p>
+                <button onclick="produktkaufen('camera')">Buy</button>
+            </div>
+        </section>
+
+        <button id="butt1">View All Products</button>
+    </main>
+
+    <footer>
+        <div id="informationen">
+            <a href="">Email</a>
+            <a href="">Impressum</a>
+            <a href="">Telefon</a>
+        </div>
+        <p>&copy; 2025 Mein Shopp. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
